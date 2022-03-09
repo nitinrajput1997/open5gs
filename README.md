@@ -13,8 +13,14 @@ sudo apt install open5gs
 
 ### Setup Open5GS
 
-Upadte the config file loacted at /etc/open5gs/amf.yaml by replacing given ip of ngap address to local eth0 ip.
-And then restart service
+Upadte the Amf config file loacted at /etc/open5gs/amf.yaml by replacing given ip of ngap address to local eth0 ip.
+And then restart amf service.
 ```bash
 sudo systemctl restart open5gs-amfd
 ```
+Upadte the Upf config file loacted at /etc/open5gs/upf.yaml by replacing given ip of ngap address to local eth0 ip.
+And then restart upf service.
+```bash
+sudo systemctl restart open5gs-upfd
+```
+
