@@ -49,12 +49,12 @@ http://localhost:3000
 # run this command if you are on remote serverand want to access dashboard locally
 ssh -L localhost:3000:localhost:3000 ubuntu@ip
 ```
-**Login credentials**
+**Login credentials : **
 **username** - admin
 **password** - 1423
 
-**Add new subscriber from dashboard**
-IMSI: 901700000000001
-Subscriber Key: 465B5CE8B199B49FAA5F0A2EE238A6BC
-USIM Type: OPc
-Operator Key: E8ED289DEBA952E4283B54E88E6183CA
+**Add new subscriber from dashboard :**
+**IMSI**: 901700000000001
+**Subscriber Key**: 465B5CE8B199B49FAA5F0A2EE238A6BC
+**USIM Type**: OPc
+**Operator Key**: E8ED289DEBA952E4283B54E88E6183CA
