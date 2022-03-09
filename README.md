@@ -40,8 +40,21 @@ git clone https://github.com/open5gs/open5gs.git
 
 # run webui with npm
 cd webui
+npm ci --no-optional && npm run build
 npm run dev --host 0.0.0.0
 
 # the web interface will start on
 http://localhost:3000
+
+# run this command if you are on remote serverand want to access dashboard locally
+ssh -L localhost:3000:localhost:3000 ubuntu@ip
 ```
+**Login credentials**
+**username** - admin
+**password** - 1423
+
+**Add new subscriber from dashboard**
+IMSI: 901700000000001
+Subscriber Key: 465B5CE8B199B49FAA5F0A2EE238A6BC
+USIM Type: OPc
+Operator Key: E8ED289DEBA952E4283B54E88E6183CA
