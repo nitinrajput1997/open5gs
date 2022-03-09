@@ -9,7 +9,7 @@ sudo add-apt-repository ppa:open5gs/latest
 sudo apt update
 sudo apt install open5gs
 ```
-**Note** We are deploying Open5gs and Ueransim on seperate VM's.
+**Note** We are deploying Open5gs and Ueransim on seperate VM's say server1 and server2 respectively.
 
 ### Setup Open5GS
 
@@ -58,3 +58,22 @@ ssh -L localhost:3000:localhost:3000 ubuntu@ip
 **Subscriber Key**: 465B5CE8B199B49FAA5F0A2EE238A6BC
 **USIM Type**: OPc
 **Operator Key**: E8ED289DEBA952E4283B54E88E6183CA
+
+### Install UERANSIM
+
+```bash
+# install cmake and other packages
+sudo apt update
+sudo apt upgrade
+sudo apt install iproute2
+sudo snap install cmake --classic
+sudo apt install gcc
+sudo apt install g++
+sudo apt install libsctp-dev
+```
+```bash
+# clone ueransim
+git clone https://github.com/aligungr/UERANSIM
+cd UERANSIM
+make
+```
