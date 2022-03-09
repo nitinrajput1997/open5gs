@@ -49,7 +49,7 @@ http://localhost:3000
 # run this command if you are on remote serverand want to access dashboard locally
 ssh -L localhost:3000:localhost:3000 ubuntu@ip
 ```
-**Login credentials : **
+**Login credentials :**
 **username** - admin
 **password** - 1423
 
