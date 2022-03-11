@@ -9,7 +9,7 @@ sudo add-apt-repository ppa:open5gs/latest
 sudo apt update
 sudo apt install open5gs
 ```
-**Note** We are deploying Open5gs and Ueransim on seperate VM's say server1 and server2 respectively.
+**Note :** We are deploying Open5gs and Ueransim on seperate VM's say server1 and server2 respectively.
 
 ### Setup Open5GS
 
