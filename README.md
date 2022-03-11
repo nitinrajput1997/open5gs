@@ -60,6 +60,7 @@ ssh -L localhost:3000:localhost:3000 ubuntu@ip
 **Operator Key**: E8ED289DEBA952E4283B54E88E6183CA
 
 ### Install UERANSIM
+On server2.
 
 ```bash
 # install cmake and other packages
