@@ -24,6 +24,7 @@ And then restart upf service.
 sudo systemctl restart open5gs-upfd
 ```
 ### NAT Port Forwarding
+In order to bridge between the 5G Core UPF and Internet, we need enable IP forwarding and add a NAT rule to the IP Tables. Following are the NAT port forwarding we have to do. Without this port forwarding the connectivity from 5G Core to internet would not work.
 ```bash
 sudo sysctl -w net.ipv4.ip_forward=1
 sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
@@ -31,6 +32,7 @@ sudo systemctl stop ufw
 sudo iptables -I FORWARD 1 -j ACCEPT
 ```
 ### Access Open5gs Dashboard
+Now we need to access our open5gs dashboard.
 ```bash
 sudo apt update
 sudo apt install curl
@@ -54,9 +56,9 @@ ssh -L localhost:3000:localhost:3000 ubuntu@ip
 **password** - 1423
 
 **Add new subscriber from dashboard :**
-**IMSI**: 901700000000001
-**Subscriber Key**: 465B5CE8B199B49FAA5F0A2EE238A6BC
-**USIM Type**: OPc
+**IMSI**: 901700000000001,
+**Subscriber Key**: 465B5CE8B199B49FAA5F0A2EE238A6BC,
+**USIM Type**: OPc,
 **Operator Key**: E8ED289DEBA952E4283B54E88E6183CA
 
 ### Install UERANSIM
