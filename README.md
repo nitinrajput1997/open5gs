@@ -73,6 +73,7 @@ sudo snap install cmake --classic
 sudo apt install gcc
 sudo apt install g++
 sudo apt install libsctp-dev
+sudo apt install make
 ```
 ```bash
 # clone ueransim
