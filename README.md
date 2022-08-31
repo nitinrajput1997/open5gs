@@ -18,11 +18,21 @@ And then restart amf service.
 ```bash
 sudo systemctl restart open5gs-amfd
 ```
+Check Logs
+```bash
+sudo tail -f /var/log/open5gs/amf.log
+```
+
 Upadte the Upf config file loacted at /etc/open5gs/upf.yaml by replacing given ip of gtpu address to local eth0 ip.
 And then restart upf service.
 ```bash
 sudo systemctl restart open5gs-upfd
 ```
+Check Logs
+```bash
+sudo tail -f /var/log/open5gs/upf.log
+```
+
 ### NAT Port Forwarding
 In order to bridge between the 5G Core UPF and Internet, we need enable IP forwarding and add a NAT rule to the IP Tables. Following are the NAT port forwarding we have to do. Without this port forwarding the connectivity from 5G Core to internet would not work.
 ```bash
