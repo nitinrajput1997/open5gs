@@ -22,6 +22,17 @@ Check Logs
 ```bash
 sudo tail -f /var/log/open5gs/amf.log
 ```
+shows like this
+```
+11/07 04:17:26.737: [amf] INFO: [Removed] Number of AMF-UEs is now 0 (../src/amf/context.c:1268)
+11/07 04:17:26.738: [sctp] INFO: AMF terminate...done (../src/amf/app.c:42)
+Open5GS daemon v2.3.6
+11/07 04:17:26.762: [app] INFO: Configuration: '/etc/open5gs/amf.yaml' (../lib/app/ogs-init.c:129)
+11/07 04:17:26.762: [app] INFO: File Logging: '/var/log/open5gs/amf.log' (../lib/app/ogs-init.c:132)
+11/07 04:17:26.764: [sbi] INFO: nghttp2_server() [127.0.0.5]:7777 (../lib/sbi/nghttp2-server.c:144)
+11/07 04:17:26.764: [amf] INFO: ngap_server() [172.31.10.16]:38412 (../src/amf/ngap-sctp.c:53)
+11/07 04:17:26.764: [sctp] INFO: AMF initialize...done (../src/amf/app.c:33)
+```
 
 Upadte the Upf config file loacted at /etc/open5gs/upf.yaml by replacing given ip of gtpu address to local eth0 ip.
 And then restart upf service.
