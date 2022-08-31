@@ -44,6 +44,21 @@ Check Logs
 sudo tail -f /var/log/open5gs/upf.log
 ```
 
+shows like this
+```
+11/07 04:18:19.224: [app] INFO: SIGTERM received (../src/main.c:53)
+11/07 04:18:19.224: [app] INFO: Open5GS daemon terminating... (../src/main.c:212)
+11/07 04:18:19.225: [upf] INFO: PFCP de-associated (../src/upf/pfcp-sm.c:178)
+11/07 04:18:19.225: [upf] INFO: [Removed] Number of UPF-sessions is now 0 (../src/upf/context.c:190)
+11/07 04:18:19.226: [app] INFO: UPF terminate...done (../src/upf/app.c:39)
+Open5GS daemon v2.3.6
+11/07 04:18:19.243: [app] INFO: Configuration: '/etc/open5gs/upf.yaml' (../lib/app/ogs-init.c:129)
+11/07 04:18:19.243: [app] INFO: File Logging: '/var/log/open5gs/upf.log' (../lib/app/ogs-init.c:132)
+11/07 04:18:19.256: [pfcp] INFO: pfcp_server() [127.0.0.7]:8805 (../lib/pfcp/path.c:30)
+11/07 04:18:19.256: [gtp] INFO: gtp_server() [172.31.10.16]:2152 (../lib/gtp/path.c:30)
+11/07 04:18:19.257: [app] INFO: UPF initialize...done (../src/upf/app.c:31)
+```
+
 ### NAT Port Forwarding
 In order to bridge between the 5G Core UPF and Internet, we need enable IP forwarding and add a NAT rule to the IP Tables. Following are the NAT port forwarding we have to do. Without this port forwarding the connectivity from 5G Core to internet would not work.
 ```bash
