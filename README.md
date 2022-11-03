@@ -18,7 +18,7 @@ And then restart amf service.
 ```bash
 sudo systemctl restart open5gs-amfd
 ```
-Check Logs
+Check logs of amf
 ```bash
 sudo tail -f /var/log/open5gs/amf.log
 ```
@@ -39,7 +39,7 @@ And then restart upf service.
 ```bash
 sudo systemctl restart open5gs-upfd
 ```
-Check Logs
+Check logs of smf
 ```bash
 sudo tail -f /var/log/open5gs/upf.log
 ```
