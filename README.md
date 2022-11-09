@@ -1,4 +1,4 @@
-# open5gs
+# Open5gs
 
 ### Install Open5GS
 We are deploying Open5gs as a native Linux daemon service application.
